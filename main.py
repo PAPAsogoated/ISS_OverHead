@@ -39,7 +39,7 @@ def is_night():
     sunset = int(data["results"]["sunset"].split("T")[1].split(":")[0])
 
     time_now = datetime.now()
-    if time_now>= sunset or time_now<= sunrise:
+    if time_now >= sunset or time_now<= sunrise:
         return True
 
 #if the ISS is close to your location
@@ -56,3 +56,6 @@ while True:
                                 to_addrs="your email",
                                 msg="the informing message" 
                                     )
+        
+
+print("Done!")
