@@ -1,6 +1,7 @@
 import requests
 from datetime import datetime
 import smtplib as smt
+import time
 my_email = "your own email"
 my_pass = "your app password"
 
@@ -48,6 +49,7 @@ def is_night():
 
 
 while True:
+    time.sleep(60)
     if is_night() and is_iss_close():
         connection = smt.SMTP("smtp.gmail.com", port=587) #your SMTP address
         connection.starttls()
@@ -58,4 +60,3 @@ while True:
                                     )
         
 
-print("Done!")
