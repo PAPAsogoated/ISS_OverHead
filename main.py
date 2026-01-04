@@ -1,8 +1,8 @@
 import requests
 from datetime import datetime
 import smtplib as smt
-my_email = "parsagp77@gamil.com"
-my_pass = "odtc bwse zvbf xxqi"
+my_email = "your own email"
+my_pass = "your app password"
 
 MY_LAT = 47.535365 #your latitude
 MY_LONG = 19.002849 #your longitude
